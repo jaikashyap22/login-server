@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CATV Training Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="//code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="easyWizard.css">
+	<link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+	
+	<style>
+	.item-group-item {
+	margin: inherit !important;
+	}
+	
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+footer { background-color:#0c1a1e; min-height:350px; font-family: 'Open Sans', sans-serif; }
+.footerleft { margin-top:50px; padding:0 36px; }
+.logofooter { margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;}
+
+.footerleft p { color:#fff; font-size:12px !important; font-family: 'Open Sans', sans-serif; margin-bottom:15px;}
+.footerleft p i { width:20px; color:#999;}
+
+
+.paddingtop-bottom {  margin-top:50px;}
+.footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
+.footer-ul li { line-height:29px; font-size:12px;}
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul i { margin-right:10px;}
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ 
+ 
+
+ 
+ .icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
+ .icon-ul li { line-height:75px; width:100%; float:left;}
+ .icon { float:left; margin-right:5px;}
+ 
+ 
+ .copyright { min-height:40px; background-color:#000000;}
+ .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
+ .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p { font-size:12px; color:#FFF; line-height:20px;}
+ .post p span { display:block; color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
+ 
+ .footer {
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: relative;
+}
+
+div#rpb_phone_buttons {
+    display: none;  
+    z-index: 9999;
+    clear: both;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1a1919;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+div#rpb_phone_buttons div a#phone_now {
+    background: #0c3;
+}
+
+div#rpb_phone_buttons div a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 60px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0 10px;
+    text-align: center;
+    box-sizing: content-box;
+}
+div.btns_2 div {
+    margin: 0;
+    width: 50%;
+    padding: 0;
+    float: left;
+}
+.wabtn_container{
+	display:none;
+}
+div#rpb_phone_buttons div a#map_now {
+    background: #fc3;
+}
+
+
+@media only screen and (max-width: 768px) {
+	div#rpb_phone_buttons {
+    display: block; 
+	}
+	.wabtn_container{
+	   display: block; 
+}
+	.footer {
+    position: inherit;
+	}
+}
+
+	</style>
+</head>
+<body>
+<div class="jumbotron text-center">
+<img class="img-responsive" src="logo.png" alt="BECIL">
+            <h2>CATV Training Guide</h2>
+
+</div>
+<div class="container">
+  <div class="row">
+<ul class="item-group list-inline">
+<li class="item-group-item col-md-3 col-sm-12 col-xs-12"> <button type="button" class="form-control btn btn-primary" data-toggle="modal" data-target="#myModal1">
+         <i class="fa fa-signal" aria-hidden="true"></i>  Bandwidth & modulation
+        </button>
+</li>
+<li class="item-group-item col-md-2 col-sm-12 col-xs-12"> <button type="button" class="form-control btn btn-info" data-toggle="modal" data-target="#myModal2">
+          <i class="fa fa-television" aria-hidden="true"></i>  CATV Spectrum
+        </button>
+</li>
+<li class="item-group-item col-md-2 col-sm-12 col-xs-12">       <button type="button" class="form-control btn btn-warning" data-toggle="modal" data-target="#myModal3">
+        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>  Digital modulation
+        </button>
+<li class="item-group-item col-md-2 col-sm-12 col-xs-12">        <button type="button" class="form-control btn btn-default" data-toggle="modal" data-target="#myModal4">
+          <i class="fa fa-sitemap" aria-hidden="true"></i> HFC NETWORK
+        </button>
+</li>
+<li class="item-group-item col-md-3 col-xs-12">  <button type="button" class="form-control btn btn-success" data-toggle="modal" data-target="#myModal5">
+          <i class="fa fa-envira" aria-hidden="true"></i> Good Installation Practices
+        </button>
+</li>
+</ul>
+   
+  </div>
+  
+  
+  
+</div>
+
+    
+
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel1">Easy Wizard</h4>
+                </div>
+                <div class="modal-body wizard-content">
+                    <div class="wizard-step">
+                       <h3 class="text-center">What is Bandwidth and How it is Used</h3>
+                       <p>In previous lectures, we briefly mentioned the concept of bandwidth. In this lecture, we will discuss more deeply what signal bandwidth is, what the meaning of channel bandwidth to a communications engineer is, and what the limitations on information rate are.
+						Signal bandwidth:
+						We can divide signals into two categories: .
+						 </p>
+						<div class="wabtn_container">
+						<a href="whatsapp://send?text=CATV Training Guide - http://ndgc.in/samples/CATV/?utm_source=WhatsApp%26utm_medium=IM%26amp;utm_campaign=share%20button" class="btn btn-success"><i class="fa fa-whatsapp" aria-hidden="true"></i> Share this on WhatsApp</a>
+						</div>
+                    </div>
+                    <div class="wizard-step">
+                        <h3 class="text-center">Step 2 </h3>
+                        <p>In previous lectures, we briefly mentioned the concept of bandwidth. In this lecture, we will discuss more deeply what signal bandwidth is, what the meaning of channel bandwidth to a communications engineer is, and what the limitations on information rate are.
+							Signal bandwidth:
+							We can divide signals into two categories: 
+						</p>
+						<div class="wabtn_container">
+						<a href="whatsapp://send?text=CATV Training Guide - http://ndgc.in/samples/CATV/?utm_source=WhatsApp%26utm_medium=IM%26amp;utm_campaign=share%20button" class="btn btn-success"><i class="fa fa-whatsapp" aria-hidden="true"></i> Share this on WhatsApp</a>
+						</div>
+                    </div>
+ <div class="wizard-step">
+                        <h3 class="text-center">Step 3 </h3>
+                        <p>In previous lectures, we briefly mentioned the concept of bandwidth. In this lecture, we will discuss more deeply what signal bandwidth is, what the meaning of channel bandwidth to a communications engineer is, and what the limitations on information rate are.
+							Signal bandwidth:
+							We can divide signals into two categories: 
+						</p>
+						<div class="wabtn_container">
+						<a href="whatsapp://send?text=CATV Training Guide - http://ndgc.in/samples/CATV/?utm_source=WhatsApp%26utm_medium=IM%26amp;utm_campaign=share%20button" class="btn btn-success"><i class="fa fa-whatsapp" aria-hidden="true"></i> Share this on WhatsApp</a>
+						</div>
+                    </div>
+                    <div class="wizard-step">
+                        <h3 class="text-center">Step 4 </h3>
+                        <p>In previous lectures, we briefly mentioned the concept of bandwidth. In this lecture, we will discuss more deeply what signal bandwidth is, what the meaning of channel bandwidth to a communications engineer is, and what the limitations on information rate are.
+							Signal bandwidth:
+							We can divide signals into two categories: 
+						</p>
+						<div class="wabtn_container">
+						<a href="whatsapp://send?text=CATV Training Guide - http://ndgc.in/samples/CATV/?utm_source=WhatsApp%26utm_medium=IM%26amp;utm_campaign=share%20button" class="btn btn-success"><i class="fa fa-whatsapp" aria-hidden="true"></i> Share this on WhatsApp</a>
+						</div>
+                    </div>
+                </div>
+                <div class="modal-footer wizard-buttons">
+                    <!-- The wizard button will be inserted here. -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--- Second --->
+
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel2">Easy Wizard</h4>
+                </div>
+                <div class="modal-body wizard-content">
+                    <div class="wizard-step">
+                        Step 1 <br>
+                        Second 1st
+                    </div>
+                    <div class="wizard-step">
+                        Step 2 <br>
+                        Second 2nd
+                    </div>
+                </div>
+                <div class="modal-footer wizard-buttons">
+                    <!-- The wizard button will be inserted here. -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--- Third --->
+
+
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel3">Easy Wizard</h4>
+                </div>
+                <div class="modal-body wizard-content">
+                    <div class="wizard-step">
+                        Step 1 <br>
+                       Third 1st
+                    </div>
+                    <div class="wizard-step">
+                        Step 2 <br>
+                        Third 2nd
+                    </div>
+                </div>
+                <div class="modal-footer wizard-buttons">
+                    <!-- The wizard button will be inserted here. -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--- Fourth --->
+
+
+    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel4">Easy Wizard</h4>
+                </div>
+                <div class="modal-body wizard-content">
+                    <div class="wizard-step">
+                        Step 1 <br>
+                       Fourth 1st
+                    </div>
+                    <div class="wizard-step">
+                        Step 2 <br>
+                        Fourth 2nd
+                    </div>
+                </div>
+                <div class="modal-footer wizard-buttons">
+                    <!-- The wizard button will be inserted here. -->
+                </div>
+            </div>
+        </div>
+    </div>
+	
+<div id="rpb_phone_buttons" class="btns_2">
+	<div>
+		<a href="tel:1800-11-6555" id="phone_now" onclick=" ga('send', 'event', 'Phone Call', 'Click to Call', '1800-11-6555'); ">
+			<span class="icon"></span>
+			<span class="text"> Call Now</span>
+		</a>
+	</div>
+	<div>
+		<a href="https://maps.google.com/?q=Bhikaji+Cama+Place%2C+RK+Puram%2C+New+Delhi%2C+Delhi%2C+India%2C+110066" id="map_now" target="_Blank"><span class="icon"></span><span class="text"> Directions</span></a></div>
+		</div>
+	
+<div class="clearfix" ></div>	
+<div class="footer">	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 footerleft ">
+        <div class="logofooter"> Broadcast Engineering Consultants India Limited (BECIL)</div>
+        <p>Broadcast Engineering Consultants India Limited&nbsp;(BECIL) an&nbsp;ISO 9001:2015, ISO 27001:2013, ISO/IEC 20000:2012 certified, Mini Ratna,&nbsp;Public Sector Enterprise of UP...<br><a href="http://becil.com/becil-profile" target="_blank" title="#">Read More</a></p>
+        <p><i class="fa fa-map-pin"></i> C-56, A/17, Sector-62, Noida, UP 201301, INDIA</p>
+        <p><i class="fa fa-phone"></i> Phone (India) : +0120 417 7850</p>
+        <p><i class="fa fa-envelope"></i> E-mail : info@becil.com</p>
+        
+      </div>
+      <div class="col-md-2 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">GENERAL LINKS</h6>
+        <ul class="footer-ul">
+          <li><a href="#"> Career</a></li>
+          <li><a href="#"> Privacy Policy</a></li>
+          <li><a href="#"> Terms & Conditions</a></li>
+          <li><a href="#"> Client Gateway</a></li>
+          <li><a href="#"> Ranking</a></li>
+          <li><a href="#"> Case Studies</a></li>
+          <li><a href="#"> Frequently Ask Questions</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">LATEST POST</h6>
+        <div class="post">
+          <p>facebook crack the movie advertisment code:what it means for you <span>April 3,2017</span></p>
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 4,2016</span></p>
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 12,2015</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+          <div class="fb-xfbml-parse-ignore">
+            <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-6">
+      <p>© 2017 - All Rights with BECIL</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="bottom_ul">
+        <li><a href="http://becil.com">Becil.com</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Faq's</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Site Map</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+
+	
+	
+    <script src="easyWizard.js"></script> 
+    <script>
+        $(document).on("ready", function(){
+            $("#myModal1").wizard({
+                onfinish:function(){
+                    console.log("Completed  Bandwidth & modulation");
+                }
+            });
+ $("#myModal2").wizard({
+                onfinish:function(){
+                    console.log("Completed  Bandwidth & modulation");
+                }
+            });
+ $("#myModal3").wizard({
+                onfinish:function(){
+                    console.log("Completed  Bandwidth & modulation");
+                }
+            });
+ $("#myModal4").wizard({
+                onfinish:function(){
+                    console.log("Completed  Bandwidth & modulation");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
