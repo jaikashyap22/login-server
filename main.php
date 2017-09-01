@@ -5,7 +5,7 @@ require('include/header.php');
 <div class="container text-center">
 <div class="jumbotron text-center">
 <img class="img-responsive" src="CATV/logo.png" alt="BECIL">
-  <h2>CATV Training Guide</h2>
+  <h2>CATV Training Guide by ABC</h2>
  
 </div>
 </div> <!-- /container -->
